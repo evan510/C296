@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMICakulatorEx", "BMICakulatorEx\BMICakulatorEx.csproj", "{3EAA3348-3088-4A97-9C88-E7A2AC082045}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonUi", "PokemonUi\PokemonUi.csproj", "{4799366F-BF9C-4B5E-903F-CC9A9116DB94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3EAA3348-3088-4A97-9C88-E7A2AC082045}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EAA3348-3088-4A97-9C88-E7A2AC082045}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EAA3348-3088-4A97-9C88-E7A2AC082045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4799366F-BF9C-4B5E-903F-CC9A9116DB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4799366F-BF9C-4B5E-903F-CC9A9116DB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4799366F-BF9C-4B5E-903F-CC9A9116DB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4799366F-BF9C-4B5E-903F-CC9A9116DB94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
