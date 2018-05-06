@@ -56,14 +56,14 @@ namespace BMICakulator
             if (bmi >= 18.5 && bmi <= 24.9)
             {
                 MessageBox.Show(string.Format("BMI:{0}", bmi.ToString("#.##")));
-                BmiLabel.Text = (BmiLabel.Text + bmi.ToString("#.##"));
-                StatusLabel.Text = (StatusLabel.Text + "非常健康");
+                BmiLabel.Text = ("BMI：" + bmi.ToString("#.##"));
+                StatusLabel.Text = ("健康狀態：非常健康");
             }
             else
             {
                 MessageBox.Show(string.Format("BMI:{0}", bmi.ToString("#.##")));
-                BmiLabel.Text = (BmiLabel.Text + bmi.ToString("#.##"));
-                StatusLabel.Text = (StatusLabel.Text + "不健康唷");
+                BmiLabel.Text = ("BMI：" + bmi.ToString("#.##"));
+                StatusLabel.Text = ("健康狀態：不健康唷");
             }
         }
 

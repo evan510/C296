@@ -10,11 +10,32 @@ using System.Windows.Forms;
 
 namespace PokemonUi
 {
-    public partial class Form1 : Form
+    public partial class PokemonUi : Form
     {
-        public Form1()
+        private int pokemonCp = 133;
+        private int pokemonHp = 30;
+        private int pokemonMaxHp = 80;
+        private float pokemonWeight = 60.0f;
+        private float pokemonHeight = 90.0f;
+        private int playerStardust = 1000;
+        private int playerCandy = 50;
+        private int pokemonPowerUpStardust = 100;
+        private int pokemonPowerUpCandy = 3;
+        private int pokemonEvolveCandy = 30;
+
+        public PokemonUi()
         {
             InitializeComponent();
+            PokemonCpLabel.Text = pokemonCp.ToString();
+            PokemonHpLabel.Text = pokemonHp.ToString();
+            PokemonMaxHpLabel.Text = pokemonMaxHp.ToString();
+            PokemonWeightLabel.Text = pokemonWeight.ToString();
+            PokemonHeightLlabel.Text = pokemonHeight.ToString();
+            PlayerStardustLabel.Text = playerStardust.ToString();
+            PlayerCandyLabel.Text = playerCandy.ToString();
+            PokemonPowerUpStardustLabel.Text = pokemonPowerUpStardust.ToString();
+            PokemonPowerUpCandyLabel.Text = pokemonPowerUpCandy.ToString();
+            PokemonEvolveCandyLabel.Text = pokemonEvolveCandy.ToString();
             Render();
         }
 
@@ -25,22 +46,18 @@ namespace PokemonUi
 
         private void PowerUpButton_Click(object sender, EventArgs e)
         {
-            int pokemonCp = int.Parse(PokemonCpLabel.Text);
-            int pokemonMaxHp = int.Parse(PokemonMaxHpLabel.Text);
-            int pokemonWeight = int.Parse(PokemonWeightLabel.Text);
-            float pokemonHeight = float.Parse(PokemonHeightLlabel.Text);
-            int playerStardust = int.Parse(PlayerStardustLabel.Text);
-            int playerCandy = int.Parse(PlayerCandyLabel.Text);
-            int pokemonPowerUpStardust = int.Parse(PokemonPowerUpStardustLabel.Text);
-            int pokemonPowerUpCandy = int.Parse(PokemonPowerUpCandyLabel.Text);
-
             //PokemonPowerUp條件
             if (playerStardust >= pokemonPowerUpCandy && playerCandy >= pokemonPowerUpCandy)
             {
-                PokemonCpLabel.Text = string.Format("{0}", pokemonCp + 100);
-                PokemonMaxHpLabel.Text = string.Format("{0}", pokemonMaxHp + 50);
-                PokemonWeightLabel.Text = string.Format("{0}", pokemonWeight + 10);
-                PokemonHeightLlabel.Text = string.Format("{0}", (pokemonHeight + 3.70f).ToString("#.##"));
+                //pokemonCp = pokemonCp + 100;
+                //pokemonMaxHp = pokemonMaxHp + 50;
+                //pokemonWeight = pokemonWeight + 10.0f;
+                //pokemonHeight = pokemonHeight + 3.70f;
+
+                PokemonCpLabel.Text = string.Format("{0}", pokemonCp += 100);
+                PokemonMaxHpLabel.Text = string.Format("{0}", pokemonMaxHp += 50);
+                PokemonWeightLabel.Text = string.Format("{0}", pokemonWeight += 10.0f);
+                PokemonHeightLlabel.Text = string.Format("{0}", pokemonHeight += 3.70f);
                 PlayerStardustLabel.Text = string.Format("{0}", playerStardust -= pokemonPowerUpStardust);
                 PlayerCandyLabel.Text = string.Format("{0}", playerCandy -= pokemonPowerUpCandy);
             }
@@ -52,26 +69,30 @@ namespace PokemonUi
 
         private void EvolveButton_Click(object sender, EventArgs e)
         {
-            int pokemonCp = int.Parse(PokemonCpLabel.Text);
-            int pokemonMaxHp = int.Parse(PokemonMaxHpLabel.Text);
-            int pokemonWeight = int.Parse(PokemonWeightLabel.Text);
-            float pokemonHeight = float.Parse(PokemonHeightLlabel.Text);
-            int playerCandy = int.Parse(PlayerCandyLabel.Text);
-            int pokemonEvolveCandy = int.Parse(PokemonEvolveCandyLabel.Text);
-            string pokemonName = PokemonNameLabel.Text;
-
             if (playerCandy < pokemonEvolveCandy) { EvolveButton.Enabled = false; }
             else if (playerCandy >= pokemonEvolveCandy)
             {
-                PokemonCpLabel.Text = string.Format("{0}", pokemonCp + 1500);
-                PokemonMaxHpLabel.Text = string.Format("{0}", pokemonMaxHp + 800);
-                PokemonWeightLabel.Text = string.Format("{0}", pokemonWeight + 40);
-                PokemonHeightLlabel.Text = string.Format("{0}", (pokemonHeight + 85.70f).ToString("#.##"));
+                PokemonCpLabel.Text = string.Format("{0}", pokemonCp += 1500);
+                PokemonMaxHpLabel.Text = string.Format("{0}", pokemonMaxHp += 800);
+                PokemonWeightLabel.Text = string.Format("{0}", pokemonWeight += 40);
+                PokemonHeightLlabel.Text = string.Format("{0}", (pokemonHeight += 85.70f).ToString("#.##"));
                 PlayerCandyLabel.Text = string.Format("{0}", playerCandy -= pokemonEvolveCandy);
                 PokemonNameLabel.Text = "噴火龍";
                 PokemonPictureBox.Image = Image.FromFile("..\\..\\Picture\\Charizard.png");
-                if (playerCandy < pokemonEvolveCandy) { EvolveButton.Enabled = false; }
+                Render();
             }
+        }
+
+        private void StardustPictureBox1_Click(object sender, EventArgs e)
+        {
+            PlayerStardustLabel.Text = string.Format("{0}", playerStardust += 500);
+            Render();
+        }
+
+        private void CandyPictureBox1_Click(object sender, EventArgs e)
+        {
+            PlayerCandyLabel.Text = string.Format("{0}", playerCandy += 10);
+            Render();
         }
     }
 }

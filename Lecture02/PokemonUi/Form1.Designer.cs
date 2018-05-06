@@ -1,6 +1,6 @@
 ﻿namespace PokemonUi
 {
-    partial class Form1
+    partial class PokemonUi
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PokemonUi));
             this.PokemonPictureBox = new System.Windows.Forms.PictureBox();
             this.CpLabel = new System.Windows.Forms.Label();
             this.PowerUpButton = new System.Windows.Forms.Button();
@@ -261,7 +261,7 @@
             this.PlayerCandyLabel.Name = "PlayerCandyLabel";
             this.PlayerCandyLabel.Size = new System.Drawing.Size(36, 25);
             this.PlayerCandyLabel.TabIndex = 18;
-            this.PlayerCandyLabel.Text = "50";
+            this.PlayerCandyLabel.Text = "29";
             // 
             // CandyPictureBox1
             // 
@@ -275,6 +275,7 @@
             this.CandyPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.CandyPictureBox1.TabIndex = 19;
             this.CandyPictureBox1.TabStop = false;
+            this.CandyPictureBox1.Click += new System.EventHandler(this.CandyPictureBox1_Click);
             // 
             // StardustPictureBox1
             // 
@@ -288,6 +289,7 @@
             this.StardustPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.StardustPictureBox1.TabIndex = 20;
             this.StardustPictureBox1.TabStop = false;
+            this.StardustPictureBox1.Click += new System.EventHandler(this.StardustPictureBox1_Click);
             // 
             // StardustPictureBox2
             // 
@@ -378,7 +380,7 @@
             this.PokemonEvolveCandyLabel.TabIndex = 26;
             this.PokemonEvolveCandyLabel.Text = "30";
             // 
-            // Form1
+            // PokemonUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -412,7 +414,7 @@
             this.Controls.Add(this.PokemonPictureBox);
             this.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "PokemonUi";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.PokemonPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CandyPictureBox1)).EndInit();
