@@ -33,12 +33,14 @@
             this.HeightTextBox = new System.Windows.Forms.TextBox();
             this.WeightTextBox = new System.Windows.Forms.TextBox();
             this.WeightLabel = new System.Windows.Forms.Label();
+            this.BmiLabel = new System.Windows.Forms.Label();
+            this.StatusLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CalculateBMIButton
             // 
             this.CalculateBMIButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.CalculateBMIButton.Location = new System.Drawing.Point(67, 178);
+            this.CalculateBMIButton.Location = new System.Drawing.Point(67, 203);
             this.CalculateBMIButton.Name = "CalculateBMIButton";
             this.CalculateBMIButton.Size = new System.Drawing.Size(192, 42);
             this.CalculateBMIButton.TabIndex = 0;
@@ -78,11 +80,33 @@
             this.WeightLabel.TabIndex = 3;
             this.WeightLabel.Text = "體重(kg)";
             // 
+            // BmiLabel
+            // 
+            this.BmiLabel.AutoSize = true;
+            this.BmiLabel.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.BmiLabel.Location = new System.Drawing.Point(67, 126);
+            this.BmiLabel.Name = "BmiLabel";
+            this.BmiLabel.Size = new System.Drawing.Size(62, 19);
+            this.BmiLabel.TabIndex = 5;
+            this.BmiLabel.Text = "BMI：";
+            // 
+            // StatusLabel
+            // 
+            this.StatusLabel.AutoSize = true;
+            this.StatusLabel.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.StatusLabel.Location = new System.Drawing.Point(67, 166);
+            this.StatusLabel.Name = "StatusLabel";
+            this.StatusLabel.Size = new System.Drawing.Size(104, 19);
+            this.StatusLabel.TabIndex = 6;
+            this.StatusLabel.Text = "健康狀態：";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(315, 257);
+            this.Controls.Add(this.StatusLabel);
+            this.Controls.Add(this.BmiLabel);
             this.Controls.Add(this.WeightTextBox);
             this.Controls.Add(this.WeightLabel);
             this.Controls.Add(this.HeightTextBox);
@@ -103,6 +127,8 @@
         private System.Windows.Forms.TextBox HeightTextBox;
         private System.Windows.Forms.TextBox WeightTextBox;
         private System.Windows.Forms.Label WeightLabel;
+        private System.Windows.Forms.Label BmiLabel;
+        private System.Windows.Forms.Label StatusLabel;
     }
 }
 

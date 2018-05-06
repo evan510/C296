@@ -37,7 +37,7 @@ namespace BMICakulator
 
             try
             {
-                 weight = float.Parse(WeightTextBox.Text);
+                weight = float.Parse(WeightTextBox.Text);
             }
             catch
             {
@@ -48,8 +48,23 @@ namespace BMICakulator
             }
 
             bmi = weight / ((height / 100.0f) * (height / 100.0f));
+            //TODO 如果bmi大於24 或 bmi 小於 18 不健康
 
-            MessageBox.Show(string.Format("BMI:{0}", bmi.ToString("#.##")));
+            //TODO 顯示不健康的提示
+
+            //TODO 不然顯示健康的提示
+            if (bmi >= 18.5 && bmi <= 24.9)
+            {
+                MessageBox.Show(string.Format("BMI:{0}", bmi.ToString("#.##")));
+                BmiLabel.Text = (BmiLabel.Text + bmi.ToString("#.##"));
+                StatusLabel.Text = (StatusLabel.Text + "非常健康");
+            }
+            else
+            {
+                MessageBox.Show(string.Format("BMI:{0}", bmi.ToString("#.##")));
+                BmiLabel.Text = (BmiLabel.Text + bmi.ToString("#.##"));
+                StatusLabel.Text = (StatusLabel.Text + "不健康唷");
+            }
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
