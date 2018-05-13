@@ -52,10 +52,16 @@ namespace Loop
 
         private void CheckBotton_Click(object sender, EventArgs e)
         {
-            string a = CheckNumberBox1.Text;
-            string b = CheckNumberBox1.Text;
-            string c = CheckNumberBox2.Text;
-            string d = CheckNumberBox3.Text;
+            int[] Number = new int[4];
+            Number[0] = ChkNumber0;
+            Number[1] = ChkNumber0;
+            Number[2] = ChkNumber0;
+            Number[3] = ChkNumber0;
+            CheckNumberBox0.Text = ChkNumber0.ToString();
+            CheckNumberBox1.Text = ChkNumber1.ToString();
+            CheckNumberBox2.Text = ChkNumber2.ToString();
+            CheckNumberBox3.Text = ChkNumber3.ToString();
+
             if (NumberLabel0.Text == CheckNumberBox1.Text)
             {
             }

@@ -44,9 +44,10 @@
             // 
             // GameStarButton
             // 
-            this.GameStarButton.Location = new System.Drawing.Point(52, 345);
+            this.GameStarButton.Location = new System.Drawing.Point(39, 276);
+            this.GameStarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GameStarButton.Name = "GameStarButton";
-            this.GameStarButton.Size = new System.Drawing.Size(143, 73);
+            this.GameStarButton.Size = new System.Drawing.Size(107, 58);
             this.GameStarButton.TabIndex = 0;
             this.GameStarButton.Text = "產生數字";
             this.GameStarButton.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // 
             this.NumberLabel0.AutoSize = true;
             this.NumberLabel0.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.NumberLabel0.Location = new System.Drawing.Point(70, 68);
+            this.NumberLabel0.Location = new System.Drawing.Point(52, 54);
+            this.NumberLabel0.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NumberLabel0.Name = "NumberLabel0";
-            this.NumberLabel0.Size = new System.Drawing.Size(33, 30);
+            this.NumberLabel0.Size = new System.Drawing.Size(26, 24);
             this.NumberLabel0.TabIndex = 1;
             this.NumberLabel0.Text = "X";
             // 
@@ -66,9 +68,10 @@
             // 
             this.NumberLabel1.AutoSize = true;
             this.NumberLabel1.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.NumberLabel1.Location = new System.Drawing.Point(180, 68);
+            this.NumberLabel1.Location = new System.Drawing.Point(135, 54);
+            this.NumberLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NumberLabel1.Name = "NumberLabel1";
-            this.NumberLabel1.Size = new System.Drawing.Size(33, 30);
+            this.NumberLabel1.Size = new System.Drawing.Size(26, 24);
             this.NumberLabel1.TabIndex = 2;
             this.NumberLabel1.Text = "X";
             // 
@@ -76,9 +79,10 @@
             // 
             this.NumberLabel3.AutoSize = true;
             this.NumberLabel3.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.NumberLabel3.Location = new System.Drawing.Point(390, 68);
+            this.NumberLabel3.Location = new System.Drawing.Point(292, 54);
+            this.NumberLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NumberLabel3.Name = "NumberLabel3";
-            this.NumberLabel3.Size = new System.Drawing.Size(33, 30);
+            this.NumberLabel3.Size = new System.Drawing.Size(26, 24);
             this.NumberLabel3.TabIndex = 3;
             this.NumberLabel3.Text = "X";
             // 
@@ -86,59 +90,66 @@
             // 
             this.NumberLabel2.AutoSize = true;
             this.NumberLabel2.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.NumberLabel2.Location = new System.Drawing.Point(280, 68);
+            this.NumberLabel2.Location = new System.Drawing.Point(210, 54);
+            this.NumberLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NumberLabel2.Name = "NumberLabel2";
-            this.NumberLabel2.Size = new System.Drawing.Size(33, 30);
+            this.NumberLabel2.Size = new System.Drawing.Size(26, 24);
             this.NumberLabel2.TabIndex = 4;
             this.NumberLabel2.Text = "X";
             // 
             // CheckNumberBox0
             // 
             this.CheckNumberBox0.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.CheckNumberBox0.Location = new System.Drawing.Point(52, 149);
+            this.CheckNumberBox0.Location = new System.Drawing.Point(39, 119);
+            this.CheckNumberBox0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckNumberBox0.Name = "CheckNumberBox0";
-            this.CheckNumberBox0.Size = new System.Drawing.Size(72, 43);
+            this.CheckNumberBox0.Size = new System.Drawing.Size(55, 36);
             this.CheckNumberBox0.TabIndex = 5;
             // 
             // CheckNumberBox1
             // 
             this.CheckNumberBox1.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.CheckNumberBox1.Location = new System.Drawing.Point(160, 149);
+            this.CheckNumberBox1.Location = new System.Drawing.Point(120, 119);
+            this.CheckNumberBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckNumberBox1.Name = "CheckNumberBox1";
-            this.CheckNumberBox1.Size = new System.Drawing.Size(72, 43);
+            this.CheckNumberBox1.Size = new System.Drawing.Size(55, 36);
             this.CheckNumberBox1.TabIndex = 6;
             // 
             // CheckNumberBox2
             // 
             this.CheckNumberBox2.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.CheckNumberBox2.Location = new System.Drawing.Point(260, 149);
+            this.CheckNumberBox2.Location = new System.Drawing.Point(195, 119);
+            this.CheckNumberBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckNumberBox2.Name = "CheckNumberBox2";
-            this.CheckNumberBox2.Size = new System.Drawing.Size(72, 43);
+            this.CheckNumberBox2.Size = new System.Drawing.Size(55, 36);
             this.CheckNumberBox2.TabIndex = 7;
             // 
             // CheckNumberBox3
             // 
             this.CheckNumberBox3.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.CheckNumberBox3.Location = new System.Drawing.Point(364, 149);
+            this.CheckNumberBox3.Location = new System.Drawing.Point(273, 119);
+            this.CheckNumberBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckNumberBox3.Name = "CheckNumberBox3";
-            this.CheckNumberBox3.Size = new System.Drawing.Size(72, 43);
+            this.CheckNumberBox3.Size = new System.Drawing.Size(55, 36);
             this.CheckNumberBox3.TabIndex = 8;
             // 
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("新細明體", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.StatusLabel.Location = new System.Drawing.Point(42, 229);
+            this.StatusLabel.Location = new System.Drawing.Point(32, 183);
+            this.StatusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(125, 60);
+            this.StatusLabel.Size = new System.Drawing.Size(100, 48);
             this.StatusLabel.TabIndex = 9;
             this.StatusLabel.Text = "????";
             // 
             // CheckBotton
             // 
-            this.CheckBotton.Location = new System.Drawing.Point(293, 345);
+            this.CheckBotton.Location = new System.Drawing.Point(214, 276);
+            this.CheckBotton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckBotton.Name = "CheckBotton";
-            this.CheckBotton.Size = new System.Drawing.Size(143, 73);
+            this.CheckBotton.Size = new System.Drawing.Size(107, 58);
             this.CheckBotton.TabIndex = 10;
             this.CheckBotton.Text = "確認";
             this.CheckBotton.UseVisualStyleBackColor = true;
@@ -147,17 +158,18 @@
             // CheckListBox
             // 
             this.CheckListBox.FormattingEnabled = true;
-            this.CheckListBox.ItemHeight = 15;
-            this.CheckListBox.Location = new System.Drawing.Point(497, 68);
+            this.CheckListBox.ItemHeight = 12;
+            this.CheckListBox.Location = new System.Drawing.Point(373, 54);
+            this.CheckListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckListBox.Name = "CheckListBox";
-            this.CheckListBox.Size = new System.Drawing.Size(170, 349);
+            this.CheckListBox.Size = new System.Drawing.Size(128, 280);
             this.CheckListBox.TabIndex = 11;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 506);
+            this.ClientSize = new System.Drawing.Size(359, 405);
             this.Controls.Add(this.CheckListBox);
             this.Controls.Add(this.CheckBotton);
             this.Controls.Add(this.StatusLabel);
@@ -170,6 +182,7 @@
             this.Controls.Add(this.NumberLabel1);
             this.Controls.Add(this.NumberLabel0);
             this.Controls.Add(this.GameStarButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
