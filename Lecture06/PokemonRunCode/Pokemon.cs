@@ -13,7 +13,23 @@ namespace PokemonRunCode
         private int iv;
         public int cp;
         public int maxHp;
-        public int hp;
+        private int hp;
+
+        public int Hp
+        {
+            get
+            {
+                return this.hp;
+            }
+            set
+            {
+                if (value > 300)
+                    this.hp = 300;
+                else if (value < 0)
+                    this.hp = 0;
+                else this.hp = value;
+            }
+        }
 
         /// <summary>
         /// 寶可夢的建構式
@@ -54,9 +70,14 @@ namespace PokemonRunCode
             Console.WriteLine("CP：{0}", this.cp);
         }
 
+        public void RestoreHp()
+        {
+            this.hp = this.maxHp;
+        }
+
         public void Attack(Pokemon other)
         {
-            other.hp -= 30;
+            other.Hp -= 15;
         }
     }
 }
