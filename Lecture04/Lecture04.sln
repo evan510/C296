@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example03", "Example03\Exam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1", "Ex1\Ex1.csproj", "{34FC29B4-A7BE-4A5B-82F7-17FB97319689}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGame", "Loop\NumberGame.csproj", "{AB4F1142-2B8F-4ED7-927D-679C9A3C4460}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersGame", "Loop\NumbersGame.csproj", "{AB4F1142-2B8F-4ED7-927D-679C9A3C4460}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
