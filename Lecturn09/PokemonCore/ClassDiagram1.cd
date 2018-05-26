@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PokemonCore.火恐龍">
+    <Position X="5.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>火恐龍.cs</FileName>
+      <NewMemberFileName>妙娃草.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonCore.小火龍">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>小火龍.cs</FileName>
+      <NewMemberFileName>妙娃種子.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonCore.寶可夢">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAIAAAAAAAAAAAAAAAgAAAIAQAAEAAQAAIAAg=</HashCode>
+      <FileName>寶可夢.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonCore.妙娃種子" Collapsed="true">
+    <Position X="1.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>妙娃種子.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonCore.妙娃草" Collapsed="true">
+    <Position X="1.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>妙娃草.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微軟正黑體" Size="9" />
+</ClassDiagram>
